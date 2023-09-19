@@ -1,4 +1,4 @@
-package br.com.ava;
+package br.com.ava.aula_2_exercicio_4;
 
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
