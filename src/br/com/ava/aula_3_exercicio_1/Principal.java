@@ -19,7 +19,7 @@ public class Principal {
 											   new Produto(7.30, "açucar"),
 											   new Produto(12.20, "pão de forma"));
 
-		double total = calcular(produtos, (Produto produto) -> {
+		double total = calcular(produtos, (Produto produto) -> {			
 			return produto.getPreco();
 		});
 		System.out.println("O preço total dos produtos é: " + total);

@@ -4,7 +4,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 		int num1 = 10;
-		int num2 = 5;
+		int num2 = 3;
 
 		// Soma
 		int soma = Calculadora.executar(num1, num2, (Integer a, Integer b) -> {
