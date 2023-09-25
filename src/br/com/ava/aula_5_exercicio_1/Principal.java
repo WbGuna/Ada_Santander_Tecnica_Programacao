@@ -19,13 +19,13 @@ public class Principal {
 		System.out.println();
 
 		System.out.println("Estes são os Produtos disponiveis e seus preços :");
-		produtos.stream().map(produto -> produto.getNome() + ": " + produto.getPreco()).forEach(System.out::println);
+		produtos.stream().map(produto -> produto.getNome() + ": R$ " + produto.getPreco()).forEach(System.out::println);
 		System.out.println();
 		
 		System.out.println("Este é nosso Produto em promoção mais barato! ");
 		Produto maisBarato = produtos.stream().min(Comparator.comparing(Produto::getPreco))
 				.orElseThrow(IllegalStateException::new);
-		System.out.println("Produto mais barato: " + maisBarato.getNome());
+		System.out.println("Produto mais barato: " + maisBarato.getNome() + " e seu preço é R$ " + maisBarato.getPreco());
 		System.out.println();
 
 		System.out.println("Estes são nossos produtos que tem uma quantidade em estoque abaixo de 10 unidades!");
