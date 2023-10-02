@@ -1,4 +1,4 @@
-package br.com.ava.aula6_exercicio_1;
+package br.com.ava.aula_6_exercicio_1;
 
 import java.util.Arrays;
 import java.util.List;
